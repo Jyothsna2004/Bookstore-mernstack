@@ -1,0 +1,54 @@
+/* Banner container */
+.mybanner {
+  width: 100%;
+  max-width: 300px; /* Updated width */
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #f8f9fa; /* Light background */
+}
+
+/* Swiper container */
+.mybanner .mySwiper {
+  width: 100%;
+  height: 350px; /* Set height to 350px */
+}
+
+/* Style for each slide */
+.mybanner .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px; /* Adjusted border-radius */
+  font-size: 18px; /* Smaller font size */
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff; /* Default background if no image */
+}
+
+/* Custom background colors for specific slides */
+.mybanner .swiper-slide:nth-child(1n) {
+  background-image: url("C:\Users\kanug\bookstorenew\mern-client\src\assets\book1.jpg");
+}
+.mybanner .swiper-slide:nth-child(2n) {
+  background-image: url("C:\Users\kanug\bookstorenew\mern-client\src\assets\book2.jpg");
+}
+
+.mybanner .swiper-slide:nth-child(3n) {
+  background-image: url("mern-client/src/assets/book3.jpg");
+}
+
+.mybanner .swiper-slide:nth-child(4n) {
+  background-image: url("C:\Users\kanug\bookstorenew\mern-client\src\assets\book4.jpg");
+}
+
+.mybanner .swiper-slide:nth-child(5n) {
+  background-image: url("C:\Users\kanug\bookstorenew\mern-client\src\assets\book5.jpg");
+}
+
+/* Additional slides can have default colors */
+.mybanner .swiper-slide:nth-child(6n),
+.mybanner .swiper-slide:nth-child(7n),
+.mybanner .swiper-slide:nth-child(8n),
+.mybanner .swiper-slide:nth-child(9n) {
+  background-color: rgb(180, 10, 47); /* Default color for extra slides */
+}
